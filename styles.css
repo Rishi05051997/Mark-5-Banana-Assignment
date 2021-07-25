@@ -119,7 +119,7 @@ body {
 
  @media (max-Width:768px) {
      .container {
-        width: 390px;
+        width: 410px;
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url('./images/small-minions.jpg');
