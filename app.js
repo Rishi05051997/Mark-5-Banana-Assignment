@@ -2,7 +2,7 @@ var btnTranslate = document.querySelector("#btn-translate");
 var textInput = document.querySelector("#text-input");
 var divOutput = document.querySelector("#output");
 
-var urlTranslate = 'https://api.funtranslations.com/translate/pirate.json';
+var urlTranslate = 'https://api.funtranslations.com/translate/yoda.json';
 
 function translationUrl(text) {
     debugger
@@ -20,13 +20,13 @@ function translationUrl(text) {
 
     //calling server for response
     debugger;
-    fetch(`https://api.funtranslations.com/translate/pirate.json?text=${inputText}`)
+    fetch(translationUrl(inputText))
         
         .then(response => response.json())
         .then(json => {
-            // console.log(json)
+            console.log(json)
             var translatedText = json.contents.translated;
-            divOutput.innerText = translatedText // output
+            divOutput.value = translatedText // output
         })
     //     .catch(errorHandler);
     // debugger;

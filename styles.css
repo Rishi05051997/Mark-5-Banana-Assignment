@@ -116,6 +116,10 @@ body {
     color:rgb(196, 144, 34);
  }
 
+ #output {
+    color: #fff;
+}
+
 
  @media (max-Width:768px) {
      .container {
